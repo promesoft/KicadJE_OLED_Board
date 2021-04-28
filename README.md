@@ -16,7 +16,7 @@ Input Audio
 Output Audio  
 
 
-# Status - Received
+# Status - Initiated
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
