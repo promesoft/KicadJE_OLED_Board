@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title "Kicad_JE_ADSR_Mega32"
 Date "2019-05-13"
 Rev "Rev A, B, C"
@@ -140,7 +140,7 @@ F 3 "" H 10350 6275 50  0001 C CNN
 	1    10350 6275
 	1    0    0    -1  
 $EndComp
-Text GLabel 2075 4500 2    50   Input ~ 0
+Text GLabel 2800 6650 2    50   Input ~ 0
 10_INT0
 Text GLabel 5975 6400 2    50   Input ~ 0
 11_INT1
@@ -1412,6 +1412,7 @@ AR Path="/5F18E4B5/60E5BC60" Ref="U?"  Part="3"
 AR Path="/5E62ACA1/60E5BC60" Ref="U?"  Part="3" 
 AR Path="/5F49A670/60E5BC60" Ref="U?"  Part="3" 
 AR Path="/60E5BC60" Ref="U?"  Part="3" 
+AR Path="/608CA457/60E5BC60" Ref="U?"  Part="3" 
 F 0 "U?" V 10750 1100 50  0000 C CNN
 F 1 "TL072" V 10750 1625 50  0000 C CNN
 F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 10900 1375 50  0001 C CNN
@@ -1912,43 +1913,43 @@ Connection ~ 1450 6950
 $Comp
 L Connector:Conn_01x06_Female J?
 U 1 1 610AFCC8
-P 1875 4400
-F 0 "J?" H 1767 3875 50  0000 C CNN
-F 1 "Input" H 1767 3966 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 1875 4400 50  0001 C CNN
-F 3 "~" H 1875 4400 50  0001 C CNN
-	1    1875 4400
+P 2600 6550
+F 0 "J?" H 2492 6025 50  0000 C CNN
+F 1 "Input" H 2492 6116 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2600 6550 50  0001 C CNN
+F 3 "~" H 2600 6550 50  0001 C CNN
+	1    2600 6550
 	-1   0    0    1   
 $EndComp
-Text GLabel 2075 4200 2    50   Input ~ 0
+Text GLabel 2800 6350 2    50   Input ~ 0
 3_PWM
-Text GLabel 2075 4300 2    50   Input ~ 0
+Text GLabel 2800 6450 2    50   Input ~ 0
 2_INT2
-Text GLabel 2075 4400 2    50   Input ~ 0
+Text GLabel 2800 6550 2    50   Input ~ 0
 11_INT1
 $Comp
 L power:GNDA #PWR?
 U 1 1 610D759E
-P 2075 4600
+P 2800 6750
 AR Path="/610D759E" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/610D759E" Ref="#PWR?"  Part="1" 
 AR Path="/608CA457/610D759E" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2075 4350 50  0001 C CNN
-F 1 "GNDA" H 2250 4550 50  0000 C CNN
-F 2 "" H 2075 4600 50  0001 C CNN
-F 3 "" H 2075 4600 50  0001 C CNN
-	1    2075 4600
+F 0 "#PWR?" H 2800 6500 50  0001 C CNN
+F 1 "GNDA" H 2975 6700 50  0000 C CNN
+F 2 "" H 2800 6750 50  0001 C CNN
+F 3 "" H 2800 6750 50  0001 C CNN
+	1    2800 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 610D7AE4
-P 2075 4100
-F 0 "#PWR?" H 2075 3950 50  0001 C CNN
-F 1 "+5V" H 2090 4273 50  0000 C CNN
-F 2 "" H 2075 4100 50  0001 C CNN
-F 3 "" H 2075 4100 50  0001 C CNN
-	1    2075 4100
+P 2800 6250
+F 0 "#PWR?" H 2800 6100 50  0001 C CNN
+F 1 "+5V" H 2815 6423 50  0000 C CNN
+F 2 "" H 2800 6250 50  0001 C CNN
+F 3 "" H 2800 6250 50  0001 C CNN
+	1    2800 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2082,4 +2083,177 @@ F 3 "" H 10075 2200 50  0001 C CNN
 	1    10075 2200
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 4600 875  1600 875 
+U 6120CBE2
+F0 "Kicad-Midi2CV2" 97
+F1 "Kicad-Midi2CV2.sch" 97
+$EndSheet
+$Comp
+L Device:C C?
+U 1 1 6125DC4B
+P 8525 3700
+F 0 "C?" H 8640 3746 50  0000 L CNN
+F 1 "100n" H 8640 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8563 3550 50  0001 C CNN
+F 3 "~" H 8525 3700 50  0001 C CNN
+	1    8525 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6125DC51
+P 8875 3650
+F 0 "C?" H 8990 3696 50  0000 L CNN
+F 1 "100n" H 8990 3605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8913 3500 50  0001 C CNN
+F 3 "~" H 8875 3650 50  0001 C CNN
+	1    8875 3650
+	1    0    0    -1  
+$EndComp
+Text GLabel 10575 3350 2    50   Input ~ 0
+Btn
+$Comp
+L power:GND #PWR?
+U 1 1 6125DC58
+P 9300 3850
+F 0 "#PWR?" H 9300 3600 50  0001 C CNN
+F 1 "GND" H 9305 3677 50  0000 C CNN
+F 2 "" H 9300 3850 50  0001 C CNN
+F 3 "" H 9300 3850 50  0001 C CNN
+	1    9300 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6125DC5E
+P 10175 3350
+F 0 "R?" V 9968 3350 50  0000 C CNN
+F 1 "10k" V 10059 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10105 3350 50  0001 C CNN
+F 3 "~" H 10175 3350 50  0001 C CNN
+	1    10175 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6125DC64
+P 10425 3500
+F 0 "C?" H 10540 3546 50  0000 L CNN
+F 1 "47n" H 10540 3455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10463 3350 50  0001 C CNN
+F 3 "~" H 10425 3500 50  0001 C CNN
+	1    10425 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8350 3350 0    50   Input ~ 0
+A1
+Text Notes 8025 3150 0    79   ~ 16
+Encoder Control
+Text GLabel 8350 3550 0    50   Input ~ 0
+A2
+Wire Wire Line
+	9925 3550 9925 3850
+$Comp
+L power:+5V #PWR?
+U 1 1 6125DC71
+P 9100 3150
+F 0 "#PWR?" H 9100 3000 50  0001 C CNN
+F 1 "+5V" H 9225 3225 50  0000 C CNN
+F 2 "" H 9100 3150 50  0001 C CNN
+F 3 "" H 9100 3150 50  0001 C CNN
+	1    9100 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9925 3350 10025 3350
+Wire Wire Line
+	10325 3350 10425 3350
+Wire Wire Line
+	10575 3350 10425 3350
+Connection ~ 10425 3350
+Wire Wire Line
+	10425 3650 10425 3850
+Wire Wire Line
+	10425 3850 9925 3850
+Connection ~ 9925 3850
+Wire Wire Line
+	8875 3800 8875 3850
+Connection ~ 8875 3850
+Wire Wire Line
+	8875 3500 8875 3350
+Connection ~ 8875 3350
+Wire Wire Line
+	8875 3350 9325 3350
+$Comp
+L Device:Rotary_Encoder_Switch SW?
+U 1 1 6125DC86
+P 9625 3450
+AR Path="/608CA457/6120CBE2/6125DC86" Ref="SW?"  Part="1" 
+AR Path="/608CA457/6125DC86" Ref="SW?"  Part="1" 
+F 0 "SW?" H 9625 3817 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 9625 3726 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 9475 3610 50  0001 C CNN
+F 3 "~" H 9625 3710 50  0001 C CNN
+	1    9625 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8525 3850 8875 3850
+Wire Wire Line
+	8875 3850 9300 3850
+Wire Wire Line
+	8350 3550 8525 3550
+Connection ~ 8525 3550
+Wire Wire Line
+	8525 3550 8700 3550
+Wire Wire Line
+	8350 3350 8875 3350
+Wire Wire Line
+	9300 3450 9300 3850
+Wire Wire Line
+	9300 3450 9325 3450
+Connection ~ 9300 3850
+Wire Wire Line
+	9300 3850 9925 3850
+$Comp
+L Device:R R?
+U 1 1 6125DC97
+P 8700 3350
+F 0 "R?" V 8600 3200 50  0000 C CNN
+F 1 "10k" V 8584 3350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8630 3350 50  0001 C CNN
+F 3 "~" H 8700 3350 50  0001 C CNN
+	1    8700 3350
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 6125DC9D
+P 9025 3250
+F 0 "R?" V 9100 3400 50  0000 C CNN
+F 1 "10k" V 9125 3250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8955 3250 50  0001 C CNN
+F 3 "~" H 9025 3250 50  0001 C CNN
+	1    9025 3250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8700 3550 8700 3500
+Connection ~ 8700 3550
+Wire Wire Line
+	8700 3550 9325 3550
+Wire Wire Line
+	8875 3350 8875 3250
+Wire Wire Line
+	8700 3200 8700 3150
+Wire Wire Line
+	8700 3150 9100 3150
+Wire Wire Line
+	9175 3250 9175 3150
+Wire Wire Line
+	9175 3150 9100 3150
+Connection ~ 9100 3150
+Text GLabel 5975 7300 2    50   Input ~ 0
+10_INT0
 $EndSCHEMATC
