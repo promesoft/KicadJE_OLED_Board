@@ -50,10 +50,12 @@ Output Audio
 
 # Pictures
 ![](KicadJE_Face_Back.png)
-
 # Schematic
 ## Sch 1
 ![](KicadJE_.png)
+
+#Software
+![](MightyCore_ATMega32.jpg)
 
 # Analysis
 ## Diag 1
