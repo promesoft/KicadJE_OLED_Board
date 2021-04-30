@@ -599,9 +599,9 @@ Text HLabel 7000 2900 2    97   Input ~ 0
 Text HLabel 7000 3000 2    97   Input ~ 0
 D1
 Text HLabel 7000 3100 2    97   Input ~ 0
-D2
+D2_INT2
 Text HLabel 7000 3200 2    97   Input ~ 0
-D3
+D3_OC0
 Text HLabel 7000 3300 2    97   Input ~ 0
 D4
 Text HLabel 7000 3400 2    97   Input ~ 0

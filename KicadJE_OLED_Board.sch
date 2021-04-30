@@ -202,8 +202,6 @@ F 3 "~" H 2225 5325 50  0001 C CNN
 	1    2225 5325
 	0    1    1    0   
 $EndComp
-Text GLabel 2425 5325 2    50   Input ~ 0
-Out1
 $Comp
 L Device:D D107
 U 1 1 5F4B9547
@@ -260,27 +258,6 @@ Wire Wire Line
 	2650 4675 2650 4625
 Wire Wire Line
 	2650 4625 2675 4625
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 5F4F8A15
-P 2825 1400
-AR Path="/5D99B81E/5F4F8A15" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/5F4F8A15" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/5F4F8A15" Ref="U?"  Part="3" 
-AR Path="/5E62ACA1/5F4F8A15" Ref="U?"  Part="3" 
-AR Path="/5F49A670/5F4F8A15" Ref="U?"  Part="3" 
-AR Path="/5F4F8A15" Ref="U101"  Part="3" 
-F 0 "U101" V 2675 1125 50  0000 C CNN
-F 1 "TL072" V 2675 1650 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 2825 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2825 1400 50  0001 C CNN
-	3    2825 1400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2925 1000 2925 1100
-Wire Wire Line
-	2925 1800 2925 1700
 Connection ~ 2025 1000
 Wire Wire Line
 	2025 1000 2400 1000
@@ -532,23 +509,6 @@ Wire Wire Line
 	1650 6200 1550 6200
 Wire Wire Line
 	1950 6200 2000 6200
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 5F7CE424
-P 2300 7475
-AR Path="/5D99B81E/5F7CE424" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/5F7CE424" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/5F7CE424" Ref="U?"  Part="2" 
-AR Path="/5E62ACA1/5F7CE424" Ref="U?"  Part="1" 
-AR Path="/5F49A670/5F7CE424" Ref="U?"  Part="2" 
-AR Path="/5F7CE424" Ref="U101"  Part="2" 
-F 0 "U101" H 2325 7450 50  0000 C CNN
-F 1 "TL072" H 2275 7525 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 2300 7475 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2300 7475 50  0001 C CNN
-	2    2300 7475
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1725 1600 1725 1800
 Connection ~ 1725 1800
@@ -580,147 +540,6 @@ Wire Wire Line
 Connection ~ 2000 6025
 Wire Wire Line
 	2000 6025 2075 6025
-Wire Wire Line
-	2600 7375 2650 7375
-Connection ~ 1950 7475
-Wire Wire Line
-	1950 7475 2000 7475
-$Comp
-L Amplifier_Operational:TL072 U?
-U 2 1 5FD1A01E
-P 5275 7450
-AR Path="/5D99B81E/5FD1A01E" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/5FD1A01E" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/5FD1A01E" Ref="U?"  Part="2" 
-AR Path="/5E62ACA1/5FD1A01E" Ref="U?"  Part="1" 
-AR Path="/5F49A670/5FD1A01E" Ref="U?"  Part="1" 
-AR Path="/5FD1A01E" Ref="U102"  Part="2" 
-F 0 "U102" H 5275 7400 50  0000 C CNN
-F 1 "TL072" H 5225 7475 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 5275 7450 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5275 7450 50  0001 C CNN
-	2    5275 7450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5575 7350 5625 7350
-Wire Wire Line
-	4925 7450 4975 7450
-Connection ~ 4925 7450
-Wire Wire Line
-	5625 7075 5425 7075
-Wire Wire Line
-	5625 7075 5625 7350
-Wire Wire Line
-	4925 7075 4925 7450
-$Comp
-L Device:R R117
-U 1 1 5FE23C06
-P 5275 7075
-AR Path="/5FE23C06" Ref="R117"  Part="1" 
-AR Path="/5C8C5FC0/5FE23C06" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FE23C06" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FE23C06" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FE23C06" Ref="R?"  Part="1" 
-F 0 "R117" V 5150 7075 50  0000 C CNN
-F 1 "100k" V 5275 7075 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5205 7075 50  0001 C CNN
-F 3 "~" H 5275 7075 50  0001 C CNN
-	1    5275 7075
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5125 7075 4925 7075
-$Comp
-L Device:R R123
-U 1 1 5FE2405B
-P 5925 7075
-AR Path="/5FE2405B" Ref="R123"  Part="1" 
-AR Path="/5C8C5FC0/5FE2405B" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FE2405B" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FE2405B" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FE2405B" Ref="R?"  Part="1" 
-F 0 "R123" V 5800 7075 50  0000 C CNN
-F 1 "10k" V 5925 7050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5855 7075 50  0001 C CNN
-F 3 "~" H 5925 7075 50  0001 C CNN
-	1    5925 7075
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5625 7075 5775 7075
-Connection ~ 5625 7075
-Wire Wire Line
-	5575 7550 5650 7550
-$Comp
-L Device:R R122
-U 1 1 5FE7DB62
-P 5800 7550
-AR Path="/5FE7DB62" Ref="R122"  Part="1" 
-AR Path="/5C8C5FC0/5FE7DB62" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FE7DB62" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FE7DB62" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FE7DB62" Ref="R?"  Part="1" 
-F 0 "R122" V 5675 7550 50  0000 C CNN
-F 1 "10k" V 5800 7525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5730 7550 50  0001 C CNN
-F 3 "~" H 5800 7550 50  0001 C CNN
-	1    5800 7550
-	0    1    1    0   
-$EndComp
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 604DA92D
-P 6325 4600
-AR Path="/5D99B81E/604DA92D" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/604DA92D" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/604DA92D" Ref="U?"  Part="2" 
-AR Path="/5E62ACA1/604DA92D" Ref="U?"  Part="1" 
-AR Path="/5F49A670/604DA92D" Ref="U?"  Part="1" 
-AR Path="/604DA92D" Ref="U101"  Part="1" 
-F 0 "U101" H 6225 4625 50  0000 C CNN
-F 1 "TL072" H 6250 4550 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 6325 4600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6325 4600 50  0001 C CNN
-	1    6325 4600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 4600 6625 4600
-$Comp
-L Amplifier_Operational:TL072 U?
-U 1 1 6058F368
-P 6325 5600
-AR Path="/5D99B81E/6058F368" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/6058F368" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/6058F368" Ref="U?"  Part="2" 
-AR Path="/5E62ACA1/6058F368" Ref="U?"  Part="1" 
-AR Path="/5F49A670/6058F368" Ref="U?"  Part="2" 
-AR Path="/6058F368" Ref="U102"  Part="1" 
-F 0 "U102" H 6275 5600 50  0000 C CNN
-F 1 "TL072" H 6425 5450 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 6325 5600 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6325 5600 50  0001 C CNN
-	1    6325 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R130
-U 1 1 60591BBE
-P 6800 4600
-AR Path="/60591BBE" Ref="R130"  Part="1" 
-AR Path="/5C8C5FC0/60591BBE" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/60591BBE" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/60591BBE" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/60591BBE" Ref="R?"  Part="1" 
-AR Path="/5F49A670/60591BBE" Ref="R?"  Part="1" 
-F 0 "R130" V 6700 4525 50  0000 C CNN
-F 1 "1k" V 6800 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6730 4600 50  0001 C CNN
-F 3 "~" H 6800 4600 50  0001 C CNN
-	1    6800 4600
-	0    1    1    0   
-$EndComp
 Wire Notes Line
 	525  525  525  7725
 $Comp
@@ -740,8 +559,6 @@ F 3 "" H 2650 4150 50  0001 C CNN
 $EndComp
 Text Notes 4250 6625 0    50   ~ 0
 DC Adjust
-Wire Wire Line
-	6025 5500 6000 5500
 Wire Notes Line
 	525  6525 8450 6525
 Wire Notes Line
@@ -767,60 +584,7 @@ F 3 "" H 3000 4375 50  0001 C CNN
 	1    3000 4375
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2925 1000 3050 1000
-Connection ~ 2925 1000
-Wire Wire Line
-	2925 1800 3050 1800
-Connection ~ 2925 1800
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 5E9259AD
-P 2950 1400
-AR Path="/5D99B81E/5E9259AD" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/5E9259AD" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/5E9259AD" Ref="U?"  Part="3" 
-AR Path="/5E62ACA1/5E9259AD" Ref="U?"  Part="3" 
-AR Path="/5F49A670/5E9259AD" Ref="U?"  Part="3" 
-AR Path="/5E9259AD" Ref="U102"  Part="3" 
-F 0 "U102" V 2800 1125 50  0000 C CNN
-F 1 "TL072" V 2800 1650 50  0000 C CNN
-F 2 "AJ-Dropbox-Kicad:AJ_SO-8_5.3x6.2mm_P1.27mm" H 2950 1400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 2950 1400 50  0001 C CNN
-	3    2950 1400
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3050 1100 3050 1000
-Wire Wire Line
-	3050 1700 3050 1800
-$Comp
-L Device:C C?
-U 1 1 5EA5FADA
-P 2800 1600
-AR Path="/5E4B0DD9/5EA5FADA" Ref="C?"  Part="1" 
-AR Path="/5E62ACA1/5EA5FADA" Ref="C?"  Part="1" 
-AR Path="/5F49A670/5EA5FADA" Ref="C?"  Part="1" 
-AR Path="/5EA5FADA" Ref="C106"  Part="1" 
-F 0 "C106" H 2750 1725 50  0000 L CNN
-F 1 "100n" H 2725 1475 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 1450 50  0001 C CNN
-F 3 "~" H 2800 1600 50  0001 C CNN
-	1    2800 1600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 1450 2800 1400
-Wire Wire Line
-	2800 1750 2800 1800
-Connection ~ 2800 1400
-Connection ~ 2800 1800
-Wire Wire Line
-	2800 1800 2925 1800
 Connection ~ 2600 1400
-Connection ~ 2600 1800
-Wire Wire Line
-	2600 1800 2800 1800
 Connection ~ 2400 1400
 Connection ~ 2400 1800
 Wire Wire Line
@@ -830,33 +594,6 @@ Wire Wire Line
 	2400 1000 2525 1000
 Wire Wire Line
 	2400 1400 2600 1400
-Connection ~ 2600 1000
-Wire Wire Line
-	2600 1000 2800 1000
-Wire Wire Line
-	2600 1400 2800 1400
-$Comp
-L Device:C C?
-U 1 1 5EB3E97A
-P 2800 1200
-AR Path="/5E4B0DD9/5EB3E97A" Ref="C?"  Part="1" 
-AR Path="/5E62ACA1/5EB3E97A" Ref="C?"  Part="1" 
-AR Path="/5F49A670/5EB3E97A" Ref="C?"  Part="1" 
-AR Path="/5EB3E97A" Ref="C105"  Part="1" 
-F 0 "C105" H 2750 1325 50  0000 L CNN
-F 1 "100n" H 2725 1075 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2838 1050 50  0001 C CNN
-F 3 "~" H 2800 1200 50  0001 C CNN
-	1    2800 1200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 1050 2800 1000
-Wire Wire Line
-	2800 1350 2800 1400
-Connection ~ 2800 1000
-Wire Wire Line
-	2800 1000 2925 1000
 $Comp
 L Connector:TestPoint TP101
 U 1 1 5EE75A89
@@ -1029,93 +766,12 @@ Connection ~ 1550 5500
 Wire Wire Line
 	1550 5500 1550 5925
 Wire Wire Line
-	1500 7475 1950 7475
-Wire Wire Line
 	1400 5325 2000 5325
 Connection ~ 2000 5325
 Wire Wire Line
 	2000 5325 2075 5325
-Text GLabel 2425 6025 2    50   Input ~ 0
-Out2
 Wire Wire Line
 	2425 6025 2375 6025
-Text GLabel 1500 7475 0    50   Input ~ 0
-Out1
-Text GLabel 4475 7450 0    50   Input ~ 0
-Out2
-Wire Wire Line
-	2650 7100 2450 7100
-$Comp
-L Device:R R106
-U 1 1 5EB6735A
-P 2300 7100
-AR Path="/5EB6735A" Ref="R106"  Part="1" 
-AR Path="/5C8C5FC0/5EB6735A" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5EB6735A" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5EB6735A" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5EB6735A" Ref="R?"  Part="1" 
-F 0 "R106" V 2175 7100 50  0000 C CNN
-F 1 "100k" V 2300 7100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2230 7100 50  0001 C CNN
-F 3 "~" H 2300 7100 50  0001 C CNN
-	1    2300 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2150 7100 1950 7100
-$Comp
-L Device:R R112
-U 1 1 5EB67365
-P 2950 7100
-AR Path="/5EB67365" Ref="R112"  Part="1" 
-AR Path="/5C8C5FC0/5EB67365" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5EB67365" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5EB67365" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5EB67365" Ref="R?"  Part="1" 
-F 0 "R112" V 2825 7100 50  0000 C CNN
-F 1 "10k" V 2950 7075 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2880 7100 50  0001 C CNN
-F 3 "~" H 2950 7100 50  0001 C CNN
-	1    2950 7100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2650 7100 2800 7100
-Connection ~ 2650 7100
-Wire Wire Line
-	3175 7100 3100 7100
-Wire Wire Line
-	2650 7100 2650 7375
-Wire Wire Line
-	1950 7100 1950 7475
-$Comp
-L Device:R R111
-U 1 1 5EBA2A5E
-P 2825 7575
-AR Path="/5EBA2A5E" Ref="R111"  Part="1" 
-AR Path="/5C8C5FC0/5EBA2A5E" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5EBA2A5E" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5EBA2A5E" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5EBA2A5E" Ref="R?"  Part="1" 
-F 0 "R111" V 2700 7575 50  0000 C CNN
-F 1 "10k" V 2825 7550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2755 7575 50  0001 C CNN
-F 3 "~" H 2825 7575 50  0001 C CNN
-	1    2825 7575
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2675 7575 2600 7575
-Wire Wire Line
-	4475 7450 4925 7450
-Text GLabel 3525 7575 2    50   Input ~ 0
-Flow1
-Text GLabel 6500 7550 2    50   Input ~ 0
-Flow2
-Wire Wire Line
-	2975 7575 3525 7575
-Wire Wire Line
-	5950 7550 6500 7550
 $Comp
 L Device:D D106
 U 1 1 5F094B09
@@ -1315,14 +971,8 @@ F 3 "" H 3000 2475 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2125 3075
-Text GLabel 3375 2650 2    50   Input ~ 0
-In1
 Wire Wire Line
 	3000 2650 3025 2650
-Text GLabel 3375 4550 2    50   Input ~ 0
-Inv2
-Text GLabel 3375 4025 2    50   Input ~ 0
-In2
 Wire Wire Line
 	3000 4025 3025 4025
 Wire Wire Line
@@ -1429,180 +1079,10 @@ F 3 "" H 2650 3300 50  0001 C CNN
 	1    2650 3300
 	-1   0    0    1   
 $EndComp
-Text GLabel 3375 3175 2    50   Input ~ 0
-Inv1
 Wire Wire Line
 	2525 3175 2650 3175
 Wire Wire Line
 	3000 3175 3025 3175
-$Comp
-L Device:R R128
-U 1 1 5F611031
-P 6650 4825
-AR Path="/5F611031" Ref="R128"  Part="1" 
-AR Path="/5C8C5FC0/5F611031" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F611031" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F611031" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F611031" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F611031" Ref="R?"  Part="1" 
-F 0 "R128" V 6550 4750 50  0000 C CNN
-F 1 "20k" V 6650 4825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6580 4825 50  0001 C CNN
-F 3 "~" H 6650 4825 50  0001 C CNN
-	1    6650 4825
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	6625 5600 6650 5600
-$Comp
-L Device:R R129
-U 1 1 5F66385C
-P 6650 5825
-AR Path="/5F66385C" Ref="R129"  Part="1" 
-AR Path="/5C8C5FC0/5F66385C" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F66385C" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F66385C" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F66385C" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F66385C" Ref="R?"  Part="1" 
-F 0 "R129" V 6550 5750 50  0000 C CNN
-F 1 "20k" V 6650 5825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6580 5825 50  0001 C CNN
-F 3 "~" H 6650 5825 50  0001 C CNN
-	1    6650 5825
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R121
-U 1 1 5F6651D8
-P 5725 6000
-AR Path="/5F6651D8" Ref="R121"  Part="1" 
-AR Path="/5C8C5FC0/5F6651D8" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F6651D8" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F6651D8" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F6651D8" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F6651D8" Ref="R?"  Part="1" 
-F 0 "R121" V 5625 5925 50  0000 C CNN
-F 1 "20k" V 5725 6000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5655 6000 50  0001 C CNN
-F 3 "~" H 5725 6000 50  0001 C CNN
-	1    5725 6000
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R119
-U 1 1 5F665839
-P 5725 5000
-AR Path="/5F665839" Ref="R119"  Part="1" 
-AR Path="/5C8C5FC0/5F665839" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F665839" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F665839" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F665839" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F665839" Ref="R?"  Part="1" 
-F 0 "R119" V 5625 4925 50  0000 C CNN
-F 1 "20k" V 5725 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5655 5000 50  0001 C CNN
-F 3 "~" H 5725 5000 50  0001 C CNN
-	1    5725 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5375 5025 5375 5000
-Wire Wire Line
-	5375 5000 5575 5000
-Wire Wire Line
-	5875 5000 5900 5000
-Connection ~ 6650 4600
-Wire Wire Line
-	5375 6025 5375 6000
-Wire Wire Line
-	5375 6000 5575 6000
-Wire Wire Line
-	5875 6000 5900 6000
-Connection ~ 6650 5600
-Wire Wire Line
-	7125 4600 7000 4600
-Wire Wire Line
-	6650 5600 6675 5600
-Text GLabel 5650 4500 0    50   Input ~ 0
-In1
-Text GLabel 5650 5700 0    50   Input ~ 0
-Inv2
-Text GLabel 5650 5500 0    50   Input ~ 0
-In2
-Text GLabel 5650 4700 0    50   Input ~ 0
-Inv1
-Wire Wire Line
-	5650 4700 6000 4700
-Wire Wire Line
-	5650 4500 6000 4500
-Wire Wire Line
-	5650 5700 6000 5700
-Wire Wire Line
-	6000 5700 6000 6000
-Connection ~ 6000 5700
-Wire Wire Line
-	6000 5700 6025 5700
-Wire Wire Line
-	6000 4700 6000 5000
-Connection ~ 6000 4700
-Wire Wire Line
-	6000 4700 6025 4700
-$Comp
-L Device:R R118
-U 1 1 5F8792D2
-P 5725 4250
-AR Path="/5F8792D2" Ref="R118"  Part="1" 
-AR Path="/5C8C5FC0/5F8792D2" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F8792D2" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F8792D2" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F8792D2" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F8792D2" Ref="R?"  Part="1" 
-F 0 "R118" V 5625 4175 50  0000 C CNN
-F 1 "20k" V 5725 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5655 4250 50  0001 C CNN
-F 3 "~" H 5725 4250 50  0001 C CNN
-	1    5725 4250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5375 4275 5375 4250
-Wire Wire Line
-	5375 4250 5575 4250
-Wire Wire Line
-	6000 4500 6000 4250
-Wire Wire Line
-	6000 4250 5875 4250
-Connection ~ 6000 4500
-Wire Wire Line
-	6000 4500 6025 4500
-$Comp
-L Device:R R120
-U 1 1 5F8D7E22
-P 5725 5250
-AR Path="/5F8D7E22" Ref="R120"  Part="1" 
-AR Path="/5C8C5FC0/5F8D7E22" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F8D7E22" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F8D7E22" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F8D7E22" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F8D7E22" Ref="R?"  Part="1" 
-F 0 "R120" V 5625 5175 50  0000 C CNN
-F 1 "20k" V 5725 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5655 5250 50  0001 C CNN
-F 3 "~" H 5725 5250 50  0001 C CNN
-	1    5725 5250
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5375 5275 5375 5250
-Wire Wire Line
-	5375 5250 5575 5250
-Wire Wire Line
-	6000 5500 6000 5250
-Wire Wire Line
-	6000 5250 5875 5250
-Connection ~ 6000 5500
-Wire Wire Line
-	6000 5500 5650 5500
 $Comp
 L Device:R R114
 U 1 1 5F908F8E
@@ -1675,151 +1155,8 @@ F 3 "~" H 3175 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3325 4550 3375 4550
-$Comp
-L Device:R R131
-U 1 1 5F90A421
-P 6825 5600
-AR Path="/5F90A421" Ref="R131"  Part="1" 
-AR Path="/5C8C5FC0/5F90A421" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5F90A421" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5F90A421" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5F90A421" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5F90A421" Ref="R?"  Part="1" 
-F 0 "R131" V 6725 5525 50  0000 C CNN
-F 1 "1k" V 6825 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6755 5600 50  0001 C CNN
-F 3 "~" H 6825 5600 50  0001 C CNN
-	1    6825 5600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6975 5600 7025 5600
-Text GLabel 7125 4600 2    50   Input ~ 0
-Flow1
-Text GLabel 7125 5600 2    50   Input ~ 0
-Flow2
-Wire Wire Line
-	6150 7075 6075 7075
 Wire Notes Line
 	4500 6525 4500 525 
-Wire Wire Line
-	6650 4675 6650 4600
-Wire Wire Line
-	6650 5675 6650 5600
-$Comp
-L Device:R R126
-U 1 1 5FC025E5
-P 6475 5150
-AR Path="/5FC025E5" Ref="R126"  Part="1" 
-AR Path="/5C8C5FC0/5FC025E5" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FC025E5" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FC025E5" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5FC025E5" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FC025E5" Ref="R?"  Part="1" 
-F 0 "R126" V 6375 5075 50  0000 C CNN
-F 1 "OPEN" V 6475 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6405 5150 50  0001 C CNN
-F 3 "~" H 6475 5150 50  0001 C CNN
-	1    6475 5150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R124
-U 1 1 5FC02A55
-P 6075 5150
-AR Path="/5FC02A55" Ref="R124"  Part="1" 
-AR Path="/5C8C5FC0/5FC02A55" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FC02A55" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FC02A55" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5FC02A55" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FC02A55" Ref="R?"  Part="1" 
-F 0 "R124" V 5975 5075 50  0000 C CNN
-F 1 "1k" V 6075 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6005 5150 50  0001 C CNN
-F 3 "~" H 6075 5150 50  0001 C CNN
-	1    6075 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 5150 6625 5150
-Wire Wire Line
-	5925 5150 5900 5150
-Wire Wire Line
-	5900 5150 5900 5000
-Connection ~ 5900 5000
-Wire Wire Line
-	5900 5000 6000 5000
-$Comp
-L Device:R R127
-U 1 1 5FC820A2
-P 6475 6150
-AR Path="/5FC820A2" Ref="R127"  Part="1" 
-AR Path="/5C8C5FC0/5FC820A2" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FC820A2" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FC820A2" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5FC820A2" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FC820A2" Ref="R?"  Part="1" 
-F 0 "R127" V 6375 6075 50  0000 C CNN
-F 1 "OPEN" V 6475 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6405 6150 50  0001 C CNN
-F 3 "~" H 6475 6150 50  0001 C CNN
-	1    6475 6150
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R125
-U 1 1 5FC820AC
-P 6075 6150
-AR Path="/5FC820AC" Ref="R125"  Part="1" 
-AR Path="/5C8C5FC0/5FC820AC" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/5FC820AC" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/5FC820AC" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/5FC820AC" Ref="R?"  Part="1" 
-AR Path="/5F49A670/5FC820AC" Ref="R?"  Part="1" 
-F 0 "R125" V 5975 6075 50  0000 C CNN
-F 1 "1k" V 6075 6150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6005 6150 50  0001 C CNN
-F 3 "~" H 6075 6150 50  0001 C CNN
-	1    6075 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6650 6150 6625 6150
-Wire Wire Line
-	5925 6150 5900 6150
-Wire Wire Line
-	5900 6150 5900 6000
-Connection ~ 5900 6000
-Wire Wire Line
-	5900 6000 6000 6000
-$Comp
-L Connector:TestPoint TP111
-U 1 1 5FD63818
-P 7000 4600
-F 0 "TP111" H 7058 4718 50  0000 L CNN
-F 1 "Flow1" H 7058 4627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7200 4600 50  0001 C CNN
-F 3 "~" H 7200 4600 50  0001 C CNN
-	1    7000 4600
-	1    0    0    -1  
-$EndComp
-Connection ~ 7000 4600
-Wire Wire Line
-	7000 4600 6950 4600
-$Comp
-L Connector:TestPoint TP112
-U 1 1 5FD64552
-P 7025 5600
-F 0 "TP112" H 7083 5718 50  0000 L CNN
-F 1 "Flow2" H 7083 5627 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 7225 5600 50  0001 C CNN
-F 3 "~" H 7225 5600 50  0001 C CNN
-	1    7025 5600
-	1    0    0    -1  
-$EndComp
-Connection ~ 7025 5600
-Wire Wire Line
-	7025 5600 7125 5600
 Wire Notes Line
 	8450 525  8450 6525
 Wire Notes Line
@@ -1828,8 +1165,6 @@ Wire Notes Line
 	4400 4850 525  4850
 Wire Notes Line
 	4500 4100 8450 4100
-Text Notes 3900 6875 0    97   ~ 0
-CHECK POTS
 Text Notes 7450 5200 0    97   ~ 0
 CHECK POTS
 $Comp
@@ -1887,10 +1222,6 @@ Wire Wire Line
 Wire Wire Line
 	2725 2075 2975 2075
 Wire Wire Line
-	6225 5150 6325 5150
-Wire Wire Line
-	6225 6150 6325 6150
-Wire Wire Line
 	1725 1800 2275 1800
 Wire Wire Line
 	1175 1000 2025 1000
@@ -1935,76 +1266,6 @@ F 3 "" H 1550 6200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1550 6200
-$Comp
-L power:GND #PWR?
-U 1 1 6075031E
-P 5375 4275
-F 0 "#PWR?" H 5375 4025 50  0001 C CNN
-F 1 "GND" H 5380 4102 50  0000 C CNN
-F 2 "" H 5375 4275 50  0001 C CNN
-F 3 "" H 5375 4275 50  0001 C CNN
-	1    5375 4275
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60750827
-P 5375 5025
-F 0 "#PWR?" H 5375 4775 50  0001 C CNN
-F 1 "GND" H 5380 4852 50  0000 C CNN
-F 2 "" H 5375 5025 50  0001 C CNN
-F 3 "" H 5375 5025 50  0001 C CNN
-	1    5375 5025
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60750ACD
-P 5375 5275
-F 0 "#PWR?" H 5375 5025 50  0001 C CNN
-F 1 "GND" H 5380 5102 50  0000 C CNN
-F 2 "" H 5375 5275 50  0001 C CNN
-F 3 "" H 5375 5275 50  0001 C CNN
-	1    5375 5275
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60750E10
-P 5375 6025
-F 0 "#PWR?" H 5375 5775 50  0001 C CNN
-F 1 "GND" H 5380 5852 50  0000 C CNN
-F 2 "" H 5375 6025 50  0001 C CNN
-F 3 "" H 5375 6025 50  0001 C CNN
-	1    5375 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 6075D4CC
-P 3175 7100
-F 0 "#PWR?" H 3175 6850 50  0001 C CNN
-F 1 "GND" H 3180 6927 50  0000 C CNN
-F 2 "" H 3175 7100 50  0001 C CNN
-F 3 "" H 3175 7100 50  0001 C CNN
-	1    3175 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 60769A5D
-P 6150 7075
-F 0 "#PWR?" H 6150 6825 50  0001 C CNN
-F 1 "GND" H 6155 6902 50  0000 C CNN
-F 2 "" H 6150 7075 50  0001 C CNN
-F 3 "" H 6150 7075 50  0001 C CNN
-	1    6150 7075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6650 4975 6650 5150
-Wire Wire Line
-	6650 5975 6650 6150
 $Comp
 L power:GND #PWR?
 U 1 1 6076A6B9
