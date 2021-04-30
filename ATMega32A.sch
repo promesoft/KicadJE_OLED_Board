@@ -781,4 +781,6 @@ Text HLabel 2050 850  0    97   Input ~ 0
 +5V32
 Text HLabel 2050 1150 0    97   Input ~ 0
 GND32
+Text HLabel 3000 1150 2    97   Input ~ 0
+GNDA32
 $EndSCHEMATC
