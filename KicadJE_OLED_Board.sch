@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title "Kicad JE - Util"
 Date "2020-03-17"
 Rev "Rev A"
@@ -2016,4 +2016,10 @@ F 3 "" H 2725 2075 50  0001 C CNN
 	1    2725 2075
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 9000 2500 1525 2500
+U 608CA457
+F0 "KicadJE_ADSR_Mega32" 97
+F1 "KicadJE_ADSR_Mega32.sch" 97
+$EndSheet
 $EndSCHEMATC
