@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 3
 Title "Kicad_JE_ADSR_Mega32"
 Date "2019-05-13"
 Rev "Rev A, B, C"
@@ -103,8 +103,6 @@ F35 "GNDA32" I R 4425 3150 97
 F36 "D2_INT2" I R 4425 1175 97 
 F37 "D3_OC0" I R 4425 1275 97 
 $EndSheet
-Text GLabel 5975 5475 2    50   Input ~ 0
-2_INT2
 $Comp
 L Connector:AudioJack2 J102
 U 1 1 5CD77C03
@@ -140,10 +138,6 @@ F 3 "" H 10350 6275 50  0001 C CNN
 	1    10350 6275
 	1    0    0    -1  
 $EndComp
-Text GLabel 2800 6650 2    50   Input ~ 0
-10_INT0
-Text GLabel 5975 6400 2    50   Input ~ 0
-11_INT1
 $Comp
 L Connector:AudioJack2_SwitchT J105
 U 1 1 5CC767B3
@@ -429,8 +423,6 @@ F 3 "~" H 5600 7450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5475 7300 5600 7300
-Text GLabel 5875 4575 2    50   Input ~ 0
-3_PWM
 Wire Wire Line
 	1600 6950 1450 6950
 Wire Wire Line
@@ -600,17 +592,17 @@ F 3 "" H 5600 4875 50  0001 C CNN
 	1    5600 4875
 	1    0    0    -1  
 $EndComp
-Text GLabel 2350 1100 0    50   Input ~ 0
+Text GLabel 2350 975  0    50   Input ~ 0
 24_A0
-Text GLabel 2350 1225 0    50   Input ~ 0
+Text GLabel 2350 1100 0    50   Input ~ 0
 25_A1
-Text GLabel 2350 1350 0    50   Input ~ 0
+Text GLabel 2350 1225 0    50   Input ~ 0
 26_A2
-Text GLabel 2350 1475 0    50   Input ~ 0
+Text GLabel 2350 1350 0    50   Input ~ 0
 27_A3
-Text GLabel 2350 1600 0    50   Input ~ 0
+Text GLabel 2350 1475 0    50   Input ~ 0
 28_A4
-Text GLabel 2350 1725 0    50   Input ~ 0
+Text GLabel 2350 1600 0    50   Input ~ 0
 29_A5
 $Comp
 L power:+5V #PWR?
@@ -693,8 +685,6 @@ F 3 "" H 5600 6975 50  0001 C CNN
 	1    5600 6975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2350 1725 2425 1725
 Wire Wire Line
 	2425 1600 2350 1600
 Wire Wire Line
@@ -1915,18 +1905,12 @@ L Connector:Conn_01x06_Female J?
 U 1 1 610AFCC8
 P 2600 6550
 F 0 "J?" H 2492 6025 50  0000 C CNN
-F 1 "Input" H 2492 6116 50  0000 C CNN
+F 1 "ADC Input" H 2492 6116 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 2600 6550 50  0001 C CNN
 F 3 "~" H 2600 6550 50  0001 C CNN
 	1    2600 6550
 	-1   0    0    1   
 $EndComp
-Text GLabel 2800 6350 2    50   Input ~ 0
-3_PWM
-Text GLabel 2800 6450 2    50   Input ~ 0
-2_INT2
-Text GLabel 2800 6550 2    50   Input ~ 0
-11_INT1
 $Comp
 L power:GNDA #PWR?
 U 1 1 610D759E
@@ -1939,17 +1923,6 @@ F 1 "GNDA" H 2975 6700 50  0000 C CNN
 F 2 "" H 2800 6750 50  0001 C CNN
 F 3 "" H 2800 6750 50  0001 C CNN
 	1    2800 6750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 610D7AE4
-P 2800 6250
-F 0 "#PWR?" H 2800 6100 50  0001 C CNN
-F 1 "+5V" H 2815 6423 50  0000 C CNN
-F 2 "" H 2800 6250 50  0001 C CNN
-F 3 "" H 2800 6250 50  0001 C CNN
-	1    2800 6250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -2083,12 +2056,6 @@ F 3 "" H 10075 2200 50  0001 C CNN
 	1    10075 2200
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 4600 875  1600 875 
-U 6120CBE2
-F0 "Kicad-Midi2CV2" 97
-F1 "Kicad-Midi2CV2.sch" 97
-$EndSheet
 $Comp
 L Device:C C?
 U 1 1 6125DC4B
@@ -2111,8 +2078,6 @@ F 3 "~" H 8875 3650 50  0001 C CNN
 	1    8875 3650
 	1    0    0    -1  
 $EndComp
-Text GLabel 10575 3350 2    50   Input ~ 0
-Btn
 $Comp
 L power:GND #PWR?
 U 1 1 6125DC58
@@ -2146,12 +2111,8 @@ F 3 "~" H 10425 3500 50  0001 C CNN
 	1    10425 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 8350 3350 0    50   Input ~ 0
-A1
 Text Notes 8025 3150 0    79   ~ 16
 Encoder Control
-Text GLabel 8350 3550 0    50   Input ~ 0
-A2
 Wire Wire Line
 	9925 3550 9925 3850
 $Comp
@@ -2254,6 +2215,48 @@ Wire Wire Line
 Wire Wire Line
 	9175 3150 9100 3150
 Connection ~ 9100 3150
+Text GLabel 8350 3350 0    50   Input ~ 0
+25_A1
+Wire Wire Line
+	2350 975  2425 975 
+Text GLabel 2350 1725 0    50   Input ~ 0
+30_A6
+Text GLabel 2350 1850 0    50   Input ~ 0
+31_A7
+Wire Wire Line
+	2425 1850 2350 1850
+Wire Wire Line
+	2350 1725 2425 1725
+Text GLabel 8350 3550 0    50   Input ~ 0
+26_A2
+Text GLabel 10575 3350 2    50   Input ~ 0
+24_A0
+Text GLabel 5875 4575 2    50   Input ~ 0
+27_A3
+Text GLabel 5975 5475 2    50   Input ~ 0
+28_A4
+Text GLabel 5975 6400 2    50   Input ~ 0
+29_A5
 Text GLabel 5975 7300 2    50   Input ~ 0
-10_INT0
+30_A6
+Text GLabel 2875 6250 2    50   Input ~ 0
+27_A3
+Text GLabel 2875 6350 2    50   Input ~ 0
+28_A4
+Text GLabel 2875 6450 2    50   Input ~ 0
+29_A5
+Wire Wire Line
+	2800 6450 2875 6450
+Wire Wire Line
+	2875 6350 2800 6350
+Wire Wire Line
+	2800 6250 2875 6250
+Text GLabel 2875 6550 2    50   Input ~ 0
+30_A6
+Text GLabel 2875 6650 2    50   Input ~ 0
+31_A7
+Wire Wire Line
+	2800 6650 2875 6650
+Wire Wire Line
+	2875 6550 2800 6550
 $EndSCHEMATC
