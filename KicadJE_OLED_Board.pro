@@ -1,4 +1,4 @@
-update=22/03/2020 10:14:25
+update=04/05/2021 20:28:22
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=KicadJE_Util.net
+LastNetListRead=KicadJE_OLED_Board.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
