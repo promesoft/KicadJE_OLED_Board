@@ -644,12 +644,6 @@ F 3 "" H 2125 1400 50  0001 C CNN
 	1    2125 1400
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 9000 2500 1525 2500
-U 608CA457
-F0 "KicadJE_ADSR_Mega32" 97
-F1 "KicadJE_ADSR_Mega32.sch" 97
-$EndSheet
 $Comp
 L Device:R R103
 U 1 1 615D37A1
@@ -728,4 +722,10 @@ Wire Wire Line
 	1725 1800 2125 1800
 Wire Wire Line
 	1175 1800 1725 1800
+$Sheet
+S 9000 2500 1525 2500
+U 608CA457
+F0 "KicadJE_OLED_Mega32" 97
+F1 "KicadJE_OLED_Mega32.sch" 97
+$EndSheet
 $EndSCHEMATC
