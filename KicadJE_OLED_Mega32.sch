@@ -1291,19 +1291,6 @@ Wire Wire Line
 	8775 4100 8975 4100
 Wire Wire Line
 	9400 4100 9275 4100
-$Comp
-L Connector:TestPoint TP?
-U 1 1 60E39729
-P 8950 3475
-AR Path="/60E39729" Ref="TP?"  Part="1" 
-AR Path="/608CA457/60E39729" Ref="TP201"  Part="1" 
-F 0 "TP201" V 9050 3525 50  0000 L CNN
-F 1 "Flow1" V 8875 3550 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9150 3475 50  0001 C CNN
-F 3 "~" H 9150 3475 50  0001 C CNN
-	1    8950 3475
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	10400 4050 10350 4050
 $Comp
@@ -1522,24 +1509,6 @@ Wire Wire Line
 	10050 5250 10025 5250
 $Comp
 L Device:R R?
-U 1 1 60F63E8C
-P 10200 5250
-AR Path="/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/5C8C5FC0/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/5CAAE8D3/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/5E4B0DD9/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/5E62ACA1/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/5F49A670/60F63E8C" Ref="R?"  Part="1" 
-AR Path="/608CA457/60F63E8C" Ref="R224"  Part="1" 
-F 0 "R224" V 10100 5175 50  0000 C CNN
-F 1 "1k" V 10200 5250 50  0000 C CNN
-F 2 "AJ:R_0805_AJ" V 10130 5250 50  0001 C CNN
-F 3 "~" H 10200 5250 50  0001 C CNN
-	1    10200 5250
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
 U 1 1 60F63EA0
 P 9125 5650
 AR Path="/60F63EA0" Ref="R?"  Part="1" 
@@ -1618,7 +1587,7 @@ AR Path="/60F63ECA" Ref="TP?"  Part="1"
 AR Path="/608CA457/60F63ECA" Ref="TP202"  Part="1" 
 F 0 "TP202" V 9025 4775 50  0000 L CNN
 F 1 "Flow2" V 8875 4800 50  0000 L CNN
-F 2 "TestPoint:TestPoint_THTPad_2.0x2.0mm_Drill1.0mm" H 9150 4725 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 9150 4725 50  0001 C CNN
 F 3 "~" H 9150 4725 50  0001 C CNN
 	1    8950 4725
 	0    -1   -1   0   
@@ -2515,8 +2484,6 @@ F 3 "~" H 9125 5150 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9275 5150 9400 5150
-Wire Wire Line
 	9400 5150 9400 4950
 Wire Wire Line
 	9400 4950 9600 4950
@@ -2675,7 +2642,7 @@ $EndComp
 Wire Wire Line
 	3725 925  3850 925 
 Wire Wire Line
-	3575 1725 3850 1725
+	3575 1725 3725 1725
 Connection ~ 3575 1725
 Wire Wire Line
 	3725 1375 3725 1350
@@ -2840,4 +2807,42 @@ F 3 "" H 7825 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8600 5150
+Wire Wire Line
+	3725 1675 3725 1725
+Connection ~ 3725 1725
+Wire Wire Line
+	3725 1725 3850 1725
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60E39729
+P 8950 3475
+AR Path="/60E39729" Ref="TP?"  Part="1" 
+AR Path="/608CA457/60E39729" Ref="TP201"  Part="1" 
+F 0 "TP201" V 9050 3525 50  0000 L CNN
+F 1 "Flow1" V 8875 3550 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 9150 3475 50  0001 C CNN
+F 3 "~" H 9150 3475 50  0001 C CNN
+	1    8950 3475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9275 5150 9400 5150
+$Comp
+L Device:R R?
+U 1 1 60F63E8C
+P 10200 5250
+AR Path="/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/5C8C5FC0/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/5CAAE8D3/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/5E4B0DD9/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/5E62ACA1/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/5F49A670/60F63E8C" Ref="R?"  Part="1" 
+AR Path="/608CA457/60F63E8C" Ref="R224"  Part="1" 
+F 0 "R224" V 10100 5175 50  0000 C CNN
+F 1 "1k" V 10200 5250 50  0000 C CNN
+F 2 "AJ:R_0805_AJ" V 10130 5250 50  0001 C CNN
+F 3 "~" H 10200 5250 50  0001 C CNN
+	1    10200 5250
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
