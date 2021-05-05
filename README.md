@@ -3,7 +3,7 @@ uP Boards that uses I2C SSD1306 for OLED Display faceplate
 
 # Purpose
 uProcessor board in eurorack units with an SSD1306 OLED display, two rotary dials/pots, two audio inputs, two cv inputs and two outputs. Must match the Faceplate - KicadJE_OLED_Face.
-## Board 1
+## Board 1 - ATMega32A
 Adjustment:  
 2 x Encoder  
 
