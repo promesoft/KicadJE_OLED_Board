@@ -57,7 +57,7 @@ Serial
 ![](KicadJE_Face_Back.png)
 # Schematic
 ## Sch 1
-![](KicadJE_.png)
+![](KicadJE_OLED_ATMega32_sch1.png)
 
 #Software
 ![](MightyCore_ATMega32.jpg)
