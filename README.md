@@ -7,15 +7,19 @@ uProcessor board in eurorack units with an SSD1306 OLED display, two rotary dial
 Adjustment:  
 2 x Encoder  
 
-CV Input
+CV Input:  
 2 x ADC AC/DC couple with optional level adj to match 0-5V ADC
 
-Gate or Input Audio 
+Gate or Input Audio:  
 2 x ADC AC/DC couple with optional level adj to match 0-5V ADC
 
-Output CV  
+Output CV:  
 2 x PWM output through 3 pole active LP  
 +-10v
+
+Programming Interface:  
+ISP  
+Serial  
 
 # Status - Initiated
 ## Initial 
