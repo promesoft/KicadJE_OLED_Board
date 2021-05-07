@@ -1280,4 +1280,8 @@ Wire Wire Line
 	3175 1450 3400 1450
 Wire Wire Line
 	3175 1450 3175 1525
+Text Label 1400 1050 0    97   ~ 0
+InPos
+Text Label 1400 1850 0    97   ~ 0
+InNeg
 $EndSCHEMATC
