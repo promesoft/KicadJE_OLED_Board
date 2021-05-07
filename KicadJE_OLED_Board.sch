@@ -235,9 +235,9 @@ F 3 "" H 3400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 1450 3400 1450
+	3000 1450 3175 1450
 Wire Wire Line
-	3000 1850 3400 1850
+	3000 1850 3175 1850
 Wire Wire Line
 	2450 1850 2625 1850
 $Sheet
@@ -512,20 +512,20 @@ Wire Wire Line
 Connection ~ 2350 2950
 $Comp
 L Amplifier_Operational:TL072 U?
-U 1 1 6221EBDA
+U 2 1 6221EBDA
 P 6525 4950
 AR Path="/5D99B81E/6221EBDA" Ref="U?"  Part="3" 
 AR Path="/5D99B7BA/6221EBDA" Ref="U?"  Part="1" 
 AR Path="/5F18E4B5/6221EBDA" Ref="U?"  Part="2" 
 AR Path="/5E62ACA1/6221EBDA" Ref="U?"  Part="1" 
 AR Path="/5F49A670/6221EBDA" Ref="U?"  Part="1" 
-AR Path="/6221EBDA" Ref="U102"  Part="1" 
+AR Path="/6221EBDA" Ref="U101"  Part="2" 
 AR Path="/608CA457/6221EBDA" Ref="U?"  Part="2" 
-F 0 "U102" H 6425 4975 50  0000 C CNN
+F 0 "U101" H 6425 4975 50  0000 C CNN
 F 1 "TL072" H 6450 4900 50  0000 C CNN
 F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 6525 4950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 6525 4950 50  0001 C CNN
-	1    6525 4950
+	2    6525 4950
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1109,7 +1109,7 @@ U 1 1 62272D67
 P 1750 1350
 F 0 "P101" H 1750 985 50  0000 C CNN
 F 1 "Doepfer_Power_10pin" H 1750 1076 50  0000 C CNN
-F 2 "Connectors_IDC:IDC-Header_2x05_Pitch2.54mm_Straight" H 1750 1350 50  0001 C CNN
+F 2 "Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical" H 1750 1350 50  0001 C CNN
 F 3 "DOCUMENTATION" H 1750 1350 50  0001 C CNN
 	1    1750 1350
 	-1   0    0    1   
@@ -1174,7 +1174,7 @@ F 3 "~" H 2775 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2925 1050 3300 1050
+	2925 1050 3175 1050
 $Comp
 L Device:R R109
 U 1 1 622937FF
@@ -1191,4 +1191,93 @@ F 3 "~" H 2775 1850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2925 1850 3000 1850
+$Comp
+L Amplifier_Operational:TL072 U?
+U 3 1 6229AF2C
+P 4400 1450
+AR Path="/5D99B81E/6229AF2C" Ref="U?"  Part="3" 
+AR Path="/5D99B7BA/6229AF2C" Ref="U?"  Part="1" 
+AR Path="/5F18E4B5/6229AF2C" Ref="U?"  Part="2" 
+AR Path="/5E62ACA1/6229AF2C" Ref="U?"  Part="1" 
+AR Path="/5F49A670/6229AF2C" Ref="U?"  Part="1" 
+AR Path="/6229AF2C" Ref="U101"  Part="3" 
+AR Path="/608CA457/6229AF2C" Ref="U?"  Part="1" 
+F 0 "U101" H 4300 1475 50  0000 C CNN
+F 1 "TL072" H 4325 1400 50  0000 C CNN
+F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 4400 1450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4400 1450 50  0001 C CNN
+	3    4400 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12VA #PWR0150
+U 1 1 6229EB47
+P 4300 1150
+F 0 "#PWR0150" H 4300 1000 50  0001 C CNN
+F 1 "+12VA" H 4315 1323 50  0000 C CNN
+F 2 "" H 4300 1150 50  0001 C CNN
+F 3 "" H 4300 1150 50  0001 C CNN
+	1    4300 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12VA #PWR?
+U 1 1 6229EF55
+P 4300 1750
+AR Path="/5E4B0DD9/6229EF55" Ref="#PWR?"  Part="1" 
+AR Path="/5E62ACA1/6229EF55" Ref="#PWR?"  Part="1" 
+AR Path="/5F49A670/6229EF55" Ref="#PWR?"  Part="1" 
+AR Path="/6229EF55" Ref="#PWR0151"  Part="1" 
+F 0 "#PWR0151" H 4300 1600 50  0001 C CNN
+F 1 "-12VA" H 4450 1825 50  0000 C CNN
+F 2 "" H 4300 1750 50  0001 C CNN
+F 3 "" H 4300 1750 50  0001 C CNN
+	1    4300 1750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C106
+U 1 1 6229F3DC
+P 3175 1675
+AR Path="/6229F3DC" Ref="C106"  Part="1" 
+AR Path="/5CD3F059/6229F3DC" Ref="C?"  Part="1" 
+AR Path="/608CA457/6229F3DC" Ref="C?"  Part="1" 
+F 0 "C106" H 3050 1800 50  0000 L CNN
+F 1 "100n" H 2850 1675 50  0000 L CNN
+F 2 "AJ:C_0805_AJ" H 3213 1525 50  0001 C CNN
+F 3 "~" H 3175 1675 50  0001 C CNN
+	1    3175 1675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C105
+U 1 1 6229F6F8
+P 3175 1250
+AR Path="/6229F6F8" Ref="C105"  Part="1" 
+AR Path="/5CD3F059/6229F6F8" Ref="C?"  Part="1" 
+AR Path="/608CA457/6229F6F8" Ref="C?"  Part="1" 
+F 0 "C105" H 3050 1375 50  0000 L CNN
+F 1 "100n" H 2850 1250 50  0000 L CNN
+F 2 "AJ:C_0805_AJ" H 3213 1100 50  0001 C CNN
+F 3 "~" H 3175 1250 50  0001 C CNN
+	1    3175 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3175 1850 3175 1825
+Wire Wire Line
+	3175 1100 3175 1050
+Connection ~ 3175 1850
+Wire Wire Line
+	3175 1850 3400 1850
+Connection ~ 3175 1050
+Wire Wire Line
+	3175 1050 3300 1050
+Wire Wire Line
+	3175 1400 3175 1450
+Connection ~ 3175 1450
+Wire Wire Line
+	3175 1450 3400 1450
+Wire Wire Line
+	3175 1450 3175 1525
 $EndSCHEMATC
