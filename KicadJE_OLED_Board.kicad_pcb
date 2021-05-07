@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 86)
+    (drawings 94)
     (tracks 99)
     (zones 0)
     (modules 189)
@@ -7767,6 +7767,14 @@
     )
   )
 
+  (gr_line (start 140 145) (end 141 145) (layer Edge.Cuts) (width 0.5) (tstamp 609576B2))
+  (gr_line (start 140 54) (end 140 145) (layer Edge.Cuts) (width 0.5) (tstamp 609576B1))
+  (gr_line (start 141 54) (end 140 54) (layer Edge.Cuts) (width 0.5) (tstamp 609576B0))
+  (gr_line (start 141 145) (end 141 54) (layer Edge.Cuts) (width 0.5) (tstamp 609576AF))
+  (gr_line (start 159 145) (end 160 145) (layer Edge.Cuts) (width 0.5) (tstamp 6095769A))
+  (gr_line (start 159 54) (end 159 145) (layer Edge.Cuts) (width 0.5))
+  (gr_line (start 160 54) (end 159 54) (layer Edge.Cuts) (width 0.5))
+  (gr_line (start 160 145) (end 160 54) (layer Edge.Cuts) (width 0.5))
   (gr_text A5 (at 167 57) (layer B.SilkS) (tstamp 6092F451)
     (effects (font (size 1 1) (thickness 0.2)) (justify mirror))
   )
