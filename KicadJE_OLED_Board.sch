@@ -606,14 +606,14 @@ AR Path="/5D60ED9A/6222A282" Ref="J?"  Part="1"
 AR Path="/5CD6EBF4/6222A282" Ref="J?"  Part="1" 
 AR Path="/608CA457/6222A282" Ref="J?"  Part="1" 
 F 0 "J105" H 3292 5571 50  0000 R CNN
-F 1 "IN1" H 3292 5480 50  0000 R CNN
+F 1 "INFLT" H 3292 5480 50  0000 R CNN
 F 2 "AJ:PJ301SM" H 3525 5500 50  0001 C CNN
 F 3 "~" H 3525 5500 50  0001 C CNN
 	1    3525 5500
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3075 5500 3325 5500
+	3075 5500 3225 5500
 Wire Wire Line
 	3325 5400 3175 5400
 Wire Wire Line
@@ -627,7 +627,7 @@ AR Path="/5D60ED9A/6222A29C" Ref="J?"  Part="1"
 AR Path="/5CD6EBF4/6222A29C" Ref="J?"  Part="1" 
 AR Path="/608CA457/6222A29C" Ref="J?"  Part="1" 
 F 0 "J106" H 3292 5971 50  0000 R CNN
-F 1 "OUT1" H 3292 5880 50  0000 R CNN
+F 1 "OUTFLT" H 3292 5880 50  0000 R CNN
 F 2 "AJ:PJ301SM" H 3525 5900 50  0001 C CNN
 F 3 "~" H 3525 5900 50  0001 C CNN
 	1    3525 5900
@@ -674,7 +674,7 @@ P 2825 6100
 AR Path="/608CA457/6222A2B8" Ref="J?"  Part="1" 
 AR Path="/6222A2B8" Ref="J104"  Part="1" 
 F 0 "J104" H 2717 5775 50  0000 C CNN
-F 1 "Out1" H 2925 6050 50  0000 C CNN
+F 1 "OutFlt" H 2925 6050 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2825 6100 50  0001 C CNN
 F 3 "~" H 2825 6100 50  0001 C CNN
 	1    2825 6100
@@ -731,7 +731,7 @@ F 3 "~" H 1650 5500 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 5500 1450 5500
+	1200 5500 1375 5500
 Wire Wire Line
 	1450 5400 1300 5400
 Wire Wire Line
@@ -1284,4 +1284,59 @@ Text Label 1400 1050 0    97   ~ 0
 InPos
 Text Label 1400 1850 0    97   ~ 0
 InNeg
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 622BC023
+P 2975 5400
+AR Path="/608CA457/622BC023" Ref="J?"  Part="1" 
+AR Path="/622BC023" Ref="J108"  Part="1" 
+F 0 "J108" H 2867 5075 50  0000 C CNN
+F 1 "InFlt" H 3075 5350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 2975 5400 50  0001 C CNN
+F 3 "~" H 2975 5400 50  0001 C CNN
+	1    2975 5400
+	-1   0    0    1   
+$EndComp
+Connection ~ 3175 5400
+Wire Wire Line
+	3175 5300 3225 5300
+Wire Wire Line
+	3225 5300 3225 5500
+Connection ~ 3225 5500
+Wire Wire Line
+	3225 5500 3325 5500
+$Comp
+L Connector:Conn_01x02_Female J?
+U 1 1 622C128F
+P 1100 5400
+AR Path="/608CA457/622C128F" Ref="J?"  Part="1" 
+AR Path="/622C128F" Ref="J107"  Part="1" 
+F 0 "J107" H 992 5075 50  0000 C CNN
+F 1 "In1" H 1200 5350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1100 5400 50  0001 C CNN
+F 3 "~" H 1100 5400 50  0001 C CNN
+	1    1100 5400
+	-1   0    0    1   
+$EndComp
+Connection ~ 1300 5400
+Wire Wire Line
+	1300 5300 1375 5300
+Wire Wire Line
+	1375 5300 1375 5500
+Connection ~ 1375 5500
+Wire Wire Line
+	1375 5500 1450 5500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 622EAFCD
+P 6925 4950
+AR Path="/622EAFCD" Ref="TP?"  Part="1" 
+AR Path="/608CA457/622EAFCD" Ref="TP?"  Part="1" 
+F 0 "TP?" V 7025 5000 50  0000 L CNN
+F 1 "AmpOut1" V 6850 5025 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_1.0x1.0mm_Drill0.5mm" H 7125 4950 50  0001 C CNN
+F 3 "~" H 7125 4950 50  0001 C CNN
+	1    6925 4950
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC
