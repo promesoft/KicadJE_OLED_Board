@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 5
 Title "Kicad JE - Util"
 Date "2020-03-17"
 Rev "Rev A"
@@ -1350,4 +1350,10 @@ Wire Wire Line
 	2925 2050 3175 2050
 Wire Wire Line
 	3175 2050 3175 1850
+$Sheet
+S 9000 1125 1525 2500
+U 623B09EB
+F0 "KicadJE_ATMega32A_DAC" 97
+F1 "KicadJE_ATMega32A_DAC.sch" 97
+$EndSheet
 $EndSCHEMATC
