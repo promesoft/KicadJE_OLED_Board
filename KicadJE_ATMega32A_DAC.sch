@@ -13,43 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 9250 2975 0    50   Input ~ 0
-PWM12
-$Comp
-L Device:C C?
-U 1 1 5CE2C7A6
-P 9775 3175
-AR Path="/5CE2C7A6" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5CE2C7A6" Ref="C?"  Part="1" 
-AR Path="/5CE3E7A9/5CE2C7A6" Ref="C212"  Part="1" 
-AR Path="/623B09EB/5CE2C7A6" Ref="C?"  Part="1" 
-F 0 "C?" H 9650 3300 50  0000 L CNN
-F 1 "100n" H 9450 3175 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9813 3025 50  0001 C CNN
-F 3 "~" H 9775 3175 50  0001 C CNN
-	1    9775 3175
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	9875 2975 9775 2975
-Wire Wire Line
-	9775 3025 9775 2975
-Connection ~ 9775 2975
-$Comp
-L Device:R R?
-U 1 1 5CE28D15
-P 10025 2975
-AR Path="/5CE28D15" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5CE28D15" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5CE28D15" Ref="R218"  Part="1" 
-AR Path="/623B09EB/5CE28D15" Ref="R?"  Part="1" 
-F 0 "R?" V 9818 2975 50  0000 C CNN
-F 1 "1k" V 9909 2975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 9955 2975 50  0001 C CNN
-F 3 "~" H 10025 2975 50  0001 C CNN
-	1    10025 2975
-	0    1    -1   0   
-$EndComp
 $Comp
 L Analog_DAC:MCP4822 U?
 U 1 1 5CE0D72D
@@ -254,8 +217,6 @@ Wire Wire Line
 	9300 5975 9700 5975
 Text GLabel 8900 1950 0    50   Input ~ 0
 DACB
-Text GLabel 8900 1650 0    50   Input ~ 0
-DACA
 Wire Wire Line
 	8900 1650 9025 1650
 Text GLabel 10875 5975 2    50   Input ~ 0
@@ -349,9 +310,9 @@ F 3 "~" H 8375 5875 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 8125 4600 0    50   Input ~ 0
-OUT1
+OUT1_DAC
 Text GLabel 8175 5875 0    50   Input ~ 0
-OUT2
+OUT2_DAC
 Wire Wire Line
 	8175 5875 8225 5875
 Wire Wire Line
@@ -586,10 +547,6 @@ Connection ~ 8600 4225
 Connection ~ 8600 4600
 Wire Wire Line
 	8600 4600 8675 4600
-Wire Wire Line
-	10175 2975 10850 2975
-Wire Wire Line
-	9775 2975 9250 2975
 Text Label 9375 4700 0    50   ~ 0
 1_noninv
 Text Label 9400 5975 0    50   ~ 0
@@ -608,8 +565,6 @@ Text Label 10050 1850 0    50   ~ 0
 SDI
 Text Label 10050 1650 0    50   ~ 0
 SCK
-Text GLabel 9375 725  0    50   Input ~ 0
-PWM12
 $Comp
 L Device:Jumper_NC_Small JP?
 U 1 1 5DCEB6AC
@@ -627,44 +582,6 @@ Wire Wire Line
 	9375 725  9425 725 
 Wire Wire Line
 	9625 725  9725 725 
-$Comp
-L Device:C C?
-U 1 1 5DD00F28
-P 10325 3400
-AR Path="/5DD00F28" Ref="C?"  Part="1" 
-AR Path="/5CD3F059/5DD00F28" Ref="C?"  Part="1" 
-AR Path="/5CE3E7A9/5DD00F28" Ref="C213"  Part="1" 
-AR Path="/623B09EB/5DD00F28" Ref="C?"  Part="1" 
-F 0 "C?" H 10200 3525 50  0000 L CNN
-F 1 "100n" H 10000 3400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10363 3250 50  0001 C CNN
-F 3 "~" H 10325 3400 50  0001 C CNN
-	1    10325 3400
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	10425 3200 10325 3200
-Wire Wire Line
-	10325 3250 10325 3200
-$Comp
-L Device:R R?
-U 1 1 5DD00F35
-P 10575 3200
-AR Path="/5DD00F35" Ref="R?"  Part="1" 
-AR Path="/5CD3F059/5DD00F35" Ref="R?"  Part="1" 
-AR Path="/5CE3E7A9/5DD00F35" Ref="R223"  Part="1" 
-AR Path="/623B09EB/5DD00F35" Ref="R?"  Part="1" 
-F 0 "R?" V 10368 3200 50  0000 C CNN
-F 1 "1k" V 10459 3200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 10505 3200 50  0001 C CNN
-F 3 "~" H 10575 3200 50  0001 C CNN
-	1    10575 3200
-	0    1    -1   0   
-$EndComp
-Wire Wire Line
-	10725 3200 10850 3200
-Text GLabel 10325 3200 0    50   Input ~ 0
-PWM15
 Text GLabel 9725 875  2    50   Input ~ 0
 DACB
 $Comp
@@ -678,8 +595,6 @@ F 3 "~" H 9525 875 50  0001 C CNN
 	1    9525 875 
 	1    0    0    -1  
 $EndComp
-Text GLabel 9375 875  0    50   Input ~ 0
-PWM15
 Wire Wire Line
 	9375 875  9425 875 
 Wire Wire Line
@@ -795,17 +710,17 @@ F 3 "" H 7600 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5275 975  0    50   Input ~ 0
-24_A0
+24_A0_DAC
 Text GLabel 5275 1100 0    50   Input ~ 0
-25_A1
+25_A1_DAC
 Text GLabel 5275 1225 0    50   Input ~ 0
-26_A2
+26_A2_DAC
 Text GLabel 5275 1350 0    50   Input ~ 0
-27_A3
+27_A3_DAC
 Text GLabel 5275 1475 0    50   Input ~ 0
-28_A4
+28_A4_DAC
 Text GLabel 5275 1600 0    50   Input ~ 0
-29_A5
+29_A5_DAC
 $Comp
 L power:+5V #PWR?
 U 1 1 6241087E
@@ -1522,9 +1437,9 @@ Connection ~ 3350 1375
 Wire Wire Line
 	3350 1375 3350 1400
 Text GLabel 7350 2625 2    50   Input ~ 0
-Flow1_32
+Flow1_32_DAC
 Text GLabel 7350 2725 2    50   Input ~ 0
-Flow2_32
+Flow2_32_DAC
 $Comp
 L Connector:Conn_01x06_Female J?
 U 1 1 624109C2
@@ -1599,17 +1514,15 @@ $EndComp
 Wire Wire Line
 	5275 975  5350 975 
 Text GLabel 5275 1725 0    50   Input ~ 0
-30_A6
+30_A6_DAC
 Text GLabel 5275 1850 0    50   Input ~ 0
-31_A7
+31_A7_DAC
 Wire Wire Line
 	5350 1850 5275 1850
 Wire Wire Line
 	5275 1725 5350 1725
 Text GLabel 4200 1150 2    50   Input ~ 0
-30_A6
-Text GLabel 4200 950  2    50   Input ~ 0
-31_A7
+30_A6_DAC
 Wire Wire Line
 	4125 1250 4200 1250
 Wire Wire Line
@@ -1638,7 +1551,7 @@ AR Path="/608CA457/5CD3F059/624109EF" Ref="#FLG?"  Part="1"
 AR Path="/608CA457/624109EF" Ref="#FLG?"  Part="1" 
 AR Path="/623B09EB/624109EF" Ref="#FLG?"  Part="1" 
 F 0 "#FLG?" H 7475 2975 50  0001 C CNN
-F 1 "PWR_FLAG" H 7300 3200 50  0000 C CNN
+F 1 "PWR_FLAG" H 8000 2950 50  0000 C CNN
 F 2 "" H 7475 2900 50  0001 C CNN
 F 3 "~" H 7475 2900 50  0001 C CNN
 	1    7475 2900
@@ -1652,103 +1565,23 @@ Connection ~ 7475 2900
 Wire Wire Line
 	7475 2900 7525 2900
 Text GLabel 7350 2225 2    50   Input ~ 0
-10_INT0
+10_INT0_DAC
 Text GLabel 7350 2325 2    50   Input ~ 0
-11_INT1
+11_INT1_DAC
 Text GLabel 7350 1075 2    50   Input ~ 0
 D1
 Text GLabel 4200 850  2    50   Input ~ 0
-29_A5
+29_A5_DAC
 Wire Wire Line
 	4125 1050 4200 1050
 Text GLabel 4200 1050 2    50   Input ~ 0
-28_A4
+28_A4_DAC
 Text GLabel 4200 1250 2    50   Input ~ 0
-27_A3
+27_A3_DAC
 Wire Wire Line
 	4125 950  4200 950 
 Wire Wire Line
 	4125 850  4200 850 
-$Comp
-L Amplifier_Operational:TL072 U?
-U 3 1 62410A02
-P 3650 1350
-AR Path="/5D99B81E/62410A02" Ref="U?"  Part="3" 
-AR Path="/5D99B7BA/62410A02" Ref="U?"  Part="1" 
-AR Path="/5F18E4B5/62410A02" Ref="U?"  Part="3" 
-AR Path="/5E62ACA1/62410A02" Ref="U?"  Part="3" 
-AR Path="/5F49A670/62410A02" Ref="U?"  Part="3" 
-AR Path="/62410A02" Ref="U?"  Part="3" 
-AR Path="/608CA457/62410A02" Ref="U?"  Part="3" 
-AR Path="/623B09EB/62410A02" Ref="U?"  Part="3" 
-F 0 "U?" V 3500 1075 50  0000 C CNN
-F 1 "TL072" V 3500 1600 50  0000 C CNN
-F 2 "AJ:AJ_SO-8_5.3x6.2mm_P1.27mm" H 3650 1350 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3650 1350 50  0001 C CNN
-	3    3650 1350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 950  3750 1050
-Wire Wire Line
-	3750 1750 3750 1650
-$Comp
-L Device:C C?
-U 1 1 62410A0A
-P 3625 1550
-AR Path="/5E4B0DD9/62410A0A" Ref="C?"  Part="1" 
-AR Path="/5E62ACA1/62410A0A" Ref="C?"  Part="1" 
-AR Path="/5F49A670/62410A0A" Ref="C?"  Part="1" 
-AR Path="/62410A0A" Ref="C?"  Part="1" 
-AR Path="/608CA457/62410A0A" Ref="C?"  Part="1" 
-AR Path="/623B09EB/62410A0A" Ref="C?"  Part="1" 
-F 0 "C?" H 3575 1675 50  0000 L CNN
-F 1 "100n" H 3550 1425 50  0000 L CNN
-F 2 "AJ:C_0805_AJ" H 3663 1400 50  0001 C CNN
-F 3 "~" H 3625 1550 50  0001 C CNN
-	1    3625 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 62410A10
-P 3625 1150
-AR Path="/5E4B0DD9/62410A10" Ref="C?"  Part="1" 
-AR Path="/5E62ACA1/62410A10" Ref="C?"  Part="1" 
-AR Path="/5F49A670/62410A10" Ref="C?"  Part="1" 
-AR Path="/62410A10" Ref="C?"  Part="1" 
-AR Path="/608CA457/62410A10" Ref="C?"  Part="1" 
-AR Path="/623B09EB/62410A10" Ref="C?"  Part="1" 
-F 0 "C?" H 3575 1275 50  0000 L CNN
-F 1 "100n" H 3550 1025 50  0000 L CNN
-F 2 "AJ:C_0805_AJ" H 3663 1000 50  0001 C CNN
-F 3 "~" H 3625 1150 50  0001 C CNN
-	1    3625 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3625 950  3750 950 
-Wire Wire Line
-	3475 1750 3625 1750
-Connection ~ 3475 1750
-Wire Wire Line
-	3625 1400 3625 1375
-Wire Wire Line
-	3350 1375 3625 1375
-Connection ~ 3625 1375
-Wire Wire Line
-	3625 1375 3625 1300
-Wire Wire Line
-	3625 1000 3625 950 
-Wire Wire Line
-	3475 950  3625 950 
-Connection ~ 3475 950 
-Connection ~ 3625 950 
-Wire Wire Line
-	3625 1700 3625 1750
-Connection ~ 3625 1750
-Wire Wire Line
-	3625 1750 3750 1750
 $Comp
 L Connector:AudioJack2 J?
 U 1 1 6244CAF7
@@ -1768,9 +1601,9 @@ $EndComp
 Wire Wire Line
 	1200 4975 1275 4975
 Text GLabel 1200 4475 0    50   Input ~ 0
-Out1_32
+Out1_32_DAC
 Text GLabel 1200 4975 0    50   Input ~ 0
-Out2_32
+Out2_32_DAC
 $Comp
 L power:GNDA #PWR?
 U 1 1 6244CB00
@@ -1932,9 +1765,9 @@ F 3 "~" H 2950 5275 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 1250 6225 0    50   Input ~ 0
-In2_32
+In2_32_DAC
 Text GLabel 1250 5825 0    50   Input ~ 0
-In1_32
+In1_32_DAC
 Wire Wire Line
 	2725 6200 2775 6200
 $Comp
@@ -2030,9 +1863,9 @@ Wire Wire Line
 	1500 6525 1350 6525
 Connection ~ 1350 6525
 Text GLabel 1250 6625 0    50   Input ~ 0
-CV1_32
+CV1_32_DAC
 Text GLabel 1200 7075 0    50   Input ~ 0
-CV2_32
+CV2_32_DAC
 Wire Wire Line
 	2725 7100 2775 7100
 $Comp
@@ -2264,21 +2097,21 @@ F 3 "~" H 3325 7100 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text GLabel 2725 6200 0    50   Input ~ 0
-In1_32
+In1_32_DAC
 Text GLabel 2725 7100 0    50   Input ~ 0
-In2_32
+In2_32_DAC
 Text GLabel 2650 4375 0    50   Input ~ 0
-CV1_32
+CV1_32_DAC
 Text GLabel 2750 5275 0    50   Input ~ 0
-CV2_32
+CV2_32_DAC
 Wire Wire Line
 	1350 4875 1500 4875
 Text GLabel 900  6325 0    50   Input ~ 0
-In1_32
+In1_32_DAC
 Text GLabel 900  7175 0    50   Input ~ 0
-CV1_32
+CV1_32_DAC
 Text GLabel 900  6725 0    50   Input ~ 0
-CV2_32
+CV2_32_DAC
 Wire Wire Line
 	1200 7175 1500 7175
 Wire Wire Line
@@ -2288,7 +2121,7 @@ Wire Wire Line
 Wire Wire Line
 	1250 5925 1500 5925
 Text GLabel 900  5925 0    50   Input ~ 0
-In2_32
+In2_32_DAC
 $Comp
 L Connector:AudioJack2 J?
 U 1 1 6244CBD9
@@ -2492,13 +2325,13 @@ Wire Wire Line
 	1350 4725 1350 4675
 Connection ~ 1350 4675
 Text GLabel 3875 4375 2    50   Input ~ 0
-27_A3
+27_A3_DAC
 Text GLabel 3975 5275 2    50   Input ~ 0
-28_A4
+28_A4_DAC
 Text GLabel 3975 6200 2    50   Input ~ 0
-29_A5
+29_A5_DAC
 Text GLabel 3975 7100 2    50   Input ~ 0
-30_A6
+30_A6_DAC
 $Comp
 L Device:C C?
 U 1 1 6244CC39
@@ -2759,15 +2592,15 @@ Wire Wire Line
 	5850 4250 5775 4250
 Connection ~ 5775 4250
 Text GLabel 5025 4450 0    50   Input ~ 0
-25_A1
+25_A1_DAC
 Text GLabel 5025 4650 0    50   Input ~ 0
-26_A2
+26_A2_DAC
 Text GLabel 7250 4450 2    50   Input ~ 0
-24_A0
+24_A0_DAC
 Text GLabel 7250 5575 2    50   Input ~ 0
-D1
+D1_DAC
 Text GLabel 5025 5575 0    50   Input ~ 0
-10_INT0
+10_INT0_DAC
 $Comp
 L Device:C C?
 U 1 1 62525482
@@ -2953,5 +2786,13 @@ Wire Wire Line
 	5850 5375 5775 5375
 Connection ~ 5775 5375
 Text GLabel 5025 5775 0    50   Input ~ 0
-11_INT1
+11_INT1_DAC
+Text GLabel 4200 950  2    50   Input ~ 0
+31_A7_DAC
+Text GLabel 8900 1650 0    50   Input ~ 0
+DACA
+Text GLabel 9375 725  0    50   Input ~ 0
+Flow1_32_DAC
+Text GLabel 9375 875  0    50   Input ~ 0
+Flow2_32_DAC
 $EndSCHEMATC
