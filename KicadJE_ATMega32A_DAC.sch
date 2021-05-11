@@ -1600,10 +1600,6 @@ F 3 "~" H 1700 4975 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1200 4975 1275 4975
-Text GLabel 1200 4475 0    50   Input ~ 0
-Out1_32_DAC
-Text GLabel 1200 4975 0    50   Input ~ 0
-Out2_32_DAC
 $Comp
 L power:GNDA #PWR?
 U 1 1 6244CB00
@@ -2795,4 +2791,8 @@ Text GLabel 9375 725  0    50   Input ~ 0
 Flow1_32_DAC
 Text GLabel 9375 875  0    50   Input ~ 0
 Flow2_32_DAC
+Text GLabel 1200 4475 0    50   Input ~ 0
+OUT1_DAC
+Text GLabel 1200 4975 0    50   Input ~ 0
+OUT2_DAC
 $EndSCHEMATC
