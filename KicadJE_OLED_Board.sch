@@ -543,19 +543,6 @@ Wire Wire Line
 Wire Wire Line
 	6425 5400 6425 5350
 $Comp
-L power:GND #PWR?
-U 1 1 6221EBF5
-P 6425 5400
-AR Path="/608CA457/6221EBF5" Ref="#PWR?"  Part="1" 
-AR Path="/6221EBF5" Ref="#PWR0149"  Part="1" 
-F 0 "#PWR0149" H 6425 5150 50  0001 C CNN
-F 1 "GND" H 6430 5227 50  0000 C CNN
-F 2 "" H 6425 5400 50  0001 C CNN
-F 3 "" H 6425 5400 50  0001 C CNN
-	1    6425 5400
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint TP101
 U 1 1 6221EBFC
 P 2350 2950
@@ -1205,7 +1192,7 @@ P 4850 5325
 AR Path="/608CA457/622BC023" Ref="J?"  Part="1" 
 AR Path="/622BC023" Ref="J108"  Part="1" 
 F 0 "J108" H 4742 5000 50  0000 C CNN
-F 1 "InFlt" H 4950 5275 50  0000 C CNN
+F 1 "InAmp" H 4950 5275 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 4850 5325 50  0001 C CNN
 F 3 "~" H 4850 5325 50  0001 C CNN
 	1    4850 5325
@@ -1231,7 +1218,7 @@ P 1175 3650
 AR Path="/608CA457/622C128F" Ref="J?"  Part="1" 
 AR Path="/622C128F" Ref="J107"  Part="1" 
 F 0 "J107" H 1067 3325 50  0000 C CNN
-F 1 "In1" H 1275 3600 50  0000 C CNN
+F 1 "In1_Flt" H 1275 3600 50  0000 C CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 1175 3650 50  0001 C CNN
 F 3 "~" H 1175 3650 50  0001 C CNN
 	1    1175 3650
@@ -1320,19 +1307,6 @@ Wire Wire Line
 Wire Wire Line
 	5325 5050 5450 5050
 Connection ~ 5450 5050
-$Comp
-L power:GND #PWR?
-U 1 1 6235C128
-P 5050 5325
-AR Path="/608CA457/6235C128" Ref="#PWR?"  Part="1" 
-AR Path="/6235C128" Ref="#PWR0153"  Part="1" 
-F 0 "#PWR0153" H 5050 5075 50  0001 C CNN
-F 1 "GND" H 5055 5152 50  0000 C CNN
-F 2 "" H 5050 5325 50  0001 C CNN
-F 3 "" H 5050 5325 50  0001 C CNN
-	1    5050 5325
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2925 1850 3175 1850
 Connection ~ 3000 1450
@@ -1356,4 +1330,32 @@ U 623B09EB
 F0 "KicadJE_ATMega32A_DAC" 97
 F1 "KicadJE_ATMega32A_DAC.sch" 97
 $EndSheet
+$Comp
+L power:GNDA #PWR?
+U 1 1 609EA14C
+P 6425 5400
+AR Path="/609EA14C" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/609EA14C" Ref="#PWR?"  Part="1" 
+AR Path="/608CA457/609EA14C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6425 5150 50  0001 C CNN
+F 1 "GNDA" H 6600 5350 50  0000 C CNN
+F 2 "" H 6425 5400 50  0001 C CNN
+F 3 "" H 6425 5400 50  0001 C CNN
+	1    6425 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 609EE9C2
+P 5050 5325
+AR Path="/609EE9C2" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/609EE9C2" Ref="#PWR?"  Part="1" 
+AR Path="/608CA457/609EE9C2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 5075 50  0001 C CNN
+F 1 "GNDA" H 5225 5275 50  0000 C CNN
+F 2 "" H 5050 5325 50  0001 C CNN
+F 3 "" H 5050 5325 50  0001 C CNN
+	1    5050 5325
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
