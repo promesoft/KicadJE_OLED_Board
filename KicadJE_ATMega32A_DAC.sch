@@ -2795,4 +2795,45 @@ Text GLabel 1200 4475 0    50   Input ~ 0
 OUT1_DAC
 Text GLabel 1200 4975 0    50   Input ~ 0
 OUT2_DAC
+Text Label 1475 1800 0    39   ~ 0
+InNeg
+Text Label 1525 700  0    39   ~ 0
+InPos
+Text Label 1500 800  0    39   ~ 0
+In5V
+$Comp
+L Device:C C?
+U 1 1 60B091A5
+P 7925 3050
+AR Path="/5E4B0DD9/60B091A5" Ref="C?"  Part="1" 
+AR Path="/5E62ACA1/60B091A5" Ref="C?"  Part="1" 
+AR Path="/5F49A670/60B091A5" Ref="C?"  Part="1" 
+AR Path="/60B091A5" Ref="C?"  Part="1" 
+AR Path="/608CA457/60B091A5" Ref="C?"  Part="1" 
+AR Path="/623B09EB/60B091A5" Ref="C422"  Part="1" 
+F 0 "C422" H 7875 3175 50  0000 L CNN
+F 1 "100n" H 7850 2925 50  0000 L CNN
+F 2 "AJ:C_0805_AJ" H 7963 2900 50  0001 C CNN
+F 3 "~" H 7925 3050 50  0001 C CNN
+	1    7925 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60B44143
+P 7925 3200
+AR Path="/60B44143" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/60B44143" Ref="#PWR?"  Part="1" 
+AR Path="/608CA457/60B44143" Ref="#PWR?"  Part="1" 
+AR Path="/623B09EB/60B44143" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7925 2950 50  0001 C CNN
+F 1 "GNDA" H 8100 3150 50  0000 C CNN
+F 2 "" H 7925 3200 50  0001 C CNN
+F 3 "" H 7925 3200 50  0001 C CNN
+	1    7925 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7525 2900 7925 2900
+Connection ~ 7525 2900
 $EndSCHEMATC

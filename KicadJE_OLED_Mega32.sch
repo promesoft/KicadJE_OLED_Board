@@ -3024,4 +3024,10 @@ F 3 "~" H 10200 5250 50  0001 C CNN
 	1    10200 5250
 	0    1    1    0   
 $EndComp
+Text Label 1625 675  0    39   ~ 0
+InPos
+Text Label 1575 1775 0    39   ~ 0
+InNeg
+Text Label 1600 775  0    39   ~ 0
+In5V
 $EndSCHEMATC
