@@ -1556,8 +1556,6 @@ Text GLabel 7350 2225 2    50   Input ~ 0
 10_INT0_DAC
 Text GLabel 7350 2325 2    50   Input ~ 0
 11_INT1_DAC
-Text GLabel 7350 1075 2    50   Input ~ 0
-D1
 Text GLabel 4200 850  2    50   Input ~ 0
 29_A5_DAC
 Wire Wire Line
@@ -2840,4 +2838,6 @@ Wire Wire Line
 	10025 1950 10500 1950
 Wire Wire Line
 	10025 1650 10500 1650
+Text GLabel 7350 1075 2    50   Input ~ 0
+D1_DAC
 $EndSCHEMATC
