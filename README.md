@@ -25,12 +25,12 @@ Serial
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
-| create material  | sch |
-| | pcb |
-| | gerber |
-| production |  |  
-|  | produced  | 
-|  | delivered |
+| create material  | sch | OK
+| | pcb | OK
+| | gerber | OK
+| production |  |  OK
+|  | produced  | OK
+|  | delivered | OK
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
