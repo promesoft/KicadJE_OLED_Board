@@ -56,10 +56,10 @@ Serial
 # Pictures
 ![](KicadJE_Face_Back.png)
 ![](KicadJE_OLED_Board_Bottom.png)
+![](KicadJE_OLED_Board_Top2.png)
 # Schematic
 ## Sch 1
 ![](KicadJE_OLED_ATMega32_sch1.png)
-![]()
 ![]()
 #Software
 ![](MightyCore_ATMega32.jpg)
