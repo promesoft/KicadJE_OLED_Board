@@ -60,7 +60,8 @@ Serial
 # Schematic
 ## Sch 1
 ![](KicadJE_OLED_ATMega32_sch1.png)
-![]()
+![](KicadJE_OLED_DAC_sch1.png)
+![](KicadJE_OLED_sch1.png)
 #Software
 ![](MightyCore_ATMega32.jpg)
 
