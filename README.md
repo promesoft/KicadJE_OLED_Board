@@ -34,8 +34,8 @@ Serial
 ## Preliminary validation
 | Test  | Detail | Status |
 | ------------- | ------------- | ------------- |
-| Initial Inspection | |  |
-| Mechanical Inspection | | |
+| Initial Inspection | | ok |
+| Mechanical Inspection | needs longer pins to OLED | ok |
 | Initial Technical Test | Board 1 |  |
 | Initial Product Test | Board1 |  |
 
